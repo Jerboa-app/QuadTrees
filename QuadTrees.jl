@@ -2,7 +2,7 @@ module QuadTrees
 
     using Plots
 
-    import Base.∈, Base.∉, Plots.Shape
+    import Base.∈, Base.∉, Plots.Shape, Base.insert!
 
     export QuadTree, Point, insert!, ∈, ∉, Draw, Draw!, Query
 
