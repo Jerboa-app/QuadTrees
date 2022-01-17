@@ -77,7 +77,7 @@ record(fig, "example.mp4",collect(1:T),framerate=60) do i
     Q = QuadTrees.QuadTree(20/2.,20/2.,20.)
     Q.minWidth=1.0
     Q.maxObjects=100
-    @assert sum([insert!(n,Q) for n in p])
+    @assert sum([insert!(n,Q) for n in p])==64
 
     C = collisions(Q)
 
